@@ -48,3 +48,18 @@ The application implements CRUD operations:
 * Dashboard and Analytics
 * Export to Excel
 * GUI Interface
+
+## Sample SQL Operations
+
+```sql
+INSERT INTO applications (company, role, status)
+VALUES ('Infosys', 'Data Analyst', 'Applied');
+
+SELECT * FROM applications;
+
+UPDATE applications
+SET status = 'Interview Scheduled'
+WHERE id = 1;
+
+DELETE FROM applications
+WHERE id = 1;
